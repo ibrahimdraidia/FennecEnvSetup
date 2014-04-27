@@ -11,7 +11,7 @@ WGET='/usr/bin/wget'
 #Android Native Development Kit
 NDK='http://dl.google.com/android/ndk/android-ndk-r9d-linux-x86.tar.bz2'
 NDK64='http://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2'
-#Android Developement
+#Android Development
 ADT='http://dl.google.com/android/adt/22.6.2/adt-bundle-linux-x86-20140321.zip'
 ADT64='http://dl.google.com/android/adt/22.6.2/adt-bundle-linux-x86_64-20140321.zip'
 
@@ -36,7 +36,7 @@ function downloadNDKandADT
 
 function install_deps_deb
 {
-	echo "[+] Installing dependencies for Fennec Developement Environement"
+	echo "[+] Installing dependencies for Fennec Development Environement"
 	if [ ROOT != "0" ]; then
 		sudo apt-get -y update >> $LOGFILE 2>&1
 		sudo apt-get install oracle-java6-installer  mercurial ccache build-dep firefox ant >> $LOGFILE 2>&1
@@ -59,7 +59,7 @@ function install_deps_deb
 
 function install_deps_yum
 {
-	echo "[+] Installing dependencies for Fennec Developement Environement..."
+	echo "[+] Installing dependencies for Fennec Development Environement..."
 	if [ ROOT != "0" ]; then
 		sudo yum update >> $LOGFILE 2>&1
 	else
@@ -114,12 +114,12 @@ function check_wget
 
 function usage
 {
-	echo "Script for installing Fennec Developement Environement"
+	echo "Script for installing Fennec Development Environement"
 	echo "By Taha Ibrahim DRAIDIA  @ibrahim_draidia"
 	echo "version 1.0"
 	echo " "
-	echo "-i	:Install Fennec Developement Environement"
-	echo "-r	:Remove Fennec Developement Environement"
+	echo "-i	:Install Fennec Development Environement"
+	echo "-r	:Remove Fennec Development Environement"
 	echo "-h	:This help message"	
 }
 
